@@ -1,0 +1,6 @@
+[submodule "modules/base64-tool"]
+	path = modules/base64-tool
+	url = https://github.com/saisriramgit/base64-tool
+[submodule "modules/json-formatter"]
+	path = modules/json-formatter
+	url = https://github.com/saisriramgit/json-formatter

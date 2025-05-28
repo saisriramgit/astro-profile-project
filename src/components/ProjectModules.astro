@@ -1,5 +1,6 @@
 ---
-
+import Base64Tool from "./Base64Tool.astro";
+import JsonFormatterTool from "./JsonFormatterTool.astro";
 ---
 
 <div class="bg-neutral-900 py-10 lg:py-16">
@@ -19,8 +20,28 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-      <!-- <EncoderDecoderTool />
-      <JsonFormatterTool /> -->
+      <a
+        href="/base64"
+        class="block p-6 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition"
+      >
+        <h3 class="text-xl font-semibold text-white mb-2">
+          Base64 Encoder / Decoder
+        </h3>
+        <p class="text-neutral-400 text-sm">
+          Quickly encode or decode text to/from Base64, plus URL-safe variants.
+        </p>
+      </a>
+      +
+      <a
+        href="/json-formatter"
+        class="block p-6 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition"
+      >
+        <h3 class="text-xl font-semibold text-white mb-2">JSON Formatter</h3>
+        <p class="text-neutral-400 text-sm">
+          Paste in raw JSON, validate, format with indentation, and copy the
+          result.
+        </p>
+      </a>
     </div>
   </div>
 </div>
